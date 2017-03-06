@@ -113,6 +113,7 @@ var fish = {
     size: 29
 };
 
+var table
 var items = [sphere, planet, ship, ananas, plane, polo, fish];
 console.log(items);
 var iterator = 0;
