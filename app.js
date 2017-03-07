@@ -1,5 +1,3 @@
-console.log('start');
-
 var sphere = {
     id: 5,
     name: 'This is sphere', // string
@@ -100,7 +98,7 @@ var polo = {
 
 var fish = {
     id: 7,
-    name: 'fish'
+    name: 'fish',
     fishClass: 'Chondrichthyes',
     fishLenght: 15,
     friendly: false,
@@ -113,25 +111,26 @@ var fish = {
     size: 29
 };
 
-var table
-var items = [sphere, planet, ship, ananas, plane, polo, fish];
-console.log(items);
+var table = {
+  ib:8,
+  name: 'table',
+  condition: 'new',
+  quality: 'hight',
+  height: 50,
+  lenght: 30,
+  size: 1500
+};
+ console.log(table)
+var items = [sphere, planet, ship, ananas, plane, polo, fish, table];
 var iterator = 0;
 
-while (iterator < items.length) {
-    debugger;
-    console.log(items[iterator]);
-    console.log(items[iterator].name);
-
-    console.log(items[iterator].isAlive);
-
-    if (items[iterator].hasOwnProperty('radius')) {
+ while (iterator < items.length) {
+    if (items[iterator].hasOwnProperty(name=='table')) {
         console.log(items[iterator]);
     }
 
     iterator += 1;
 }
-
 var sizeSum = 0;
 for (var ii = 0; ii < items.length; ii += 1) {
     if (items[ii].hasOwnProperty('size')) {
@@ -139,4 +138,4 @@ for (var ii = 0; ii < items.length; ii += 1) {
     }
 }
 
-console.log(sizeSum);
+console.log(sizeSum + ' - sizuSum');
