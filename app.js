@@ -122,15 +122,19 @@ var table = {
 };
  console.log(table)
 var items = [sphere, planet, ship, ananas, plane, polo, fish, table];
-var iterator = 0;
+/*var iterator = 0;
 
- while (iterator < items.length) {
+while (iterator < items.length) {
     if (items[iterator].hasOwnProperty(name=='table')) {
         console.log(items[iterator]);
     }
 
     iterator += 1;
-}
+}*/
+ for (var iterator=0;iterator<items.lenght;iterator +=1) {
+ if (items[iterator].hasOwnProperty(name=='table'))
+     console.log(items[iterator]);
+ }
 var sizeSum = 0;
 for (var ii = 0; ii < items.length; ii += 1) {
     if (items[ii].hasOwnProperty('size')) {
